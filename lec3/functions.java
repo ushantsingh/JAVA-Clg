@@ -87,23 +87,29 @@ public class functions {
 
         // System.out.println(split(" "));
 
-        String str = " hello ";
-        String str1 = " hello ";
-        System.out.println(str.length());
-        System.out.println(str.charAt(1));
-        System.out.println(str.toUpperCase());
-        System.out.println(str.toLowerCase());
-        System.out.println(str.indexOf('z'));
-        System.out.println(str.substring(2));
-        System.out.println(str.substring(1, 3));
-        System.out.println(str.trim());
-        System.out.println(str.split(" "));
-        System.out.println(str==str1);// do string compare nhi hote hai unka reference compare hoti hai 
-        System.out.println(str.equals(str1));//string compare hote hai dushre string se yaha reference variable compare nhi hota hai
-        String str2 = new String("hello");
-        String str3 = new String("hello");
-        System.out.println(str2 == str3);// yaha pe two new object bnta hai aur do object same nhi hota hai then it produce output as -->  false
+        String str = " hello java ";
+        String str1 = " hello java ";
+        // System.out.println(str.length());
+        // System.out.println(str.charAt(1));
+        // System.out.println(str.toUpperCase());
+        // System.out.println(str.toLowerCase());
+        // System.out.println(str.indexOf('z'));
+        // System.out.println(str.substring(2));
+        // System.out.println(str.substring(1, 3));
+        // System.out.println(str.trim());
+        // System.out.println(str.split(" "));
+        // System.out.println(str==str1);// do string compare nhi hote hai unka reference compare hoti hai 
+        // System.out.println(str.equals(str1));//string compare hote hai dushre string se yaha reference variable compare nhi hota hai
+        // String str2 = new String("hello");
+        // String str3 = new String("hello");
+        // System.out.println(str2 == str3);// yaha pe two new object bnta hai aur do object same nhi hota hai then it produce output as -->  false
         
-        System.out.println(str2.equals(str3));// yaha pe string ka values compare hoti hai object nhi.
+        // System.out.println(str2.equals(str3));// yaha pe string ka values compare hoti hai object nhi.
+        
+        String a[] = str.split(" ");
+        // System.out.println(a[1]);
+        for (String element : a) {
+            System.out.println(element);
+        }
     }
 }
