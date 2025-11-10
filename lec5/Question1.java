@@ -7,10 +7,18 @@ public class Question1 {
 
         String a[] = str.split(" ");
 
-        for (int i = 0; i < a.length; i++) {
-            a[i] = new StringBuilder(a[i]).reverse().toString();
-            String result = a[i];
-            System.out.println(result);
+        StringBuilder result=new StringBuilder();
+
+        for (String element : a) {
+            StringBuilder val = new StringBuilder(element);
+            result.append(val.reverse().append(" "));
         }
+        System.out.println(result);
+        
+        // for (int i = 0; i < a.length; i++) {
+        //     a[i] = new StringBuilder(a[i]).reverse().toString();
+        //     String result = a[i];
+        //     System.out.println(result);
+        // }
     }
 }
