@@ -1,3 +1,4 @@
+package classes_Questions;
 /*Create a class Student with fields name, rollNumber, and marks. Write a method to display
 student details. Create 3 student objects and display their data. */
 
