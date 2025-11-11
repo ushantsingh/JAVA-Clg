@@ -21,8 +21,18 @@ class Student {
 
 public class Qustion_1 {
     public static void main(String[] args) {
-        Student s = new Student();
-        s.data("ushant ", 352, 499);
-        s.display();
+        Student s1 = new Student();
+        Student s2 = new Student();
+        Student s3 = new Student();
+        Student s4 = new Student();
+
+        s1.data("ushant ", 352, 499);
+        s1.display();
+        s2.data("Arya ", 355, 499);
+        s2.display();
+        s3.data("Samarth ", 353, 459);
+        s3.display();
+        s4.data("Tishya ", 354, 499);
+        s4.display();
     }
 }
