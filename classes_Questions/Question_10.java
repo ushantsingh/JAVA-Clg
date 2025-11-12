@@ -1,3 +1,4 @@
+package classes_Questions;
 /*Create a class Laptop with brand, RAM, and price. Add a constructor to initialize values and a
 method to display them. */
 
@@ -15,7 +16,7 @@ class Laptop {
     }
 }
 
-public class Question {
+public class Question_10 {
     public static void main(String[] args) {
         Laptop l = new Laptop("Apple", 16, 82000);
     }
