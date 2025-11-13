@@ -13,7 +13,7 @@ class Dog extends Animal{
     }
 }
 
-public class INheritance {
+public class Singe_Level_Inheritance {
     public static void main(String[] args) {
         Dog obj = new Dog();
         obj.bark();
