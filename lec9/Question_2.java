@@ -1,3 +1,4 @@
+package lec9;
 
 class Areas {
     void area(int r) {

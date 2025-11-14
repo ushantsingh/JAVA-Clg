@@ -1,3 +1,4 @@
+package lec9;
 
 class Stringggg {
     void print(String str) {

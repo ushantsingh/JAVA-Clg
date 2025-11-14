@@ -1,3 +1,4 @@
+package lec9;
 
 class MultipleSum {
     void Sum(int a, int b) {
