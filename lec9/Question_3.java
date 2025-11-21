@@ -6,7 +6,7 @@ class Stringggg {
     }
 
     void print(int a) {
-        System.out.println(a*an);
+        System.out.println(a*a);
     }
 }
 
