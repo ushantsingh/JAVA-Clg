@@ -13,8 +13,9 @@ public class Question_1 {
         while (it.hasNext()) {
             Integer x = it.next();
             if ((x & 1) == 1) {
-                System.out.println(x+" --> -1");
+                it.set(-1);
             }
         }
+        System.out.println(list);
     }
 }
