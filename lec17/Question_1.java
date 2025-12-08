@@ -11,8 +11,9 @@ public class Question_1 {
 
         ListIterator<Integer> it = list.listIterator();
         while (it.hasNext()) {
-            if ((it.next() & 1) == 1) {
-                System.out.println(1);
+            Integer x = it.next();
+            if ((x & 1) == 1) {
+                System.out.println(x+" --> -1");
             }
         }
     }
