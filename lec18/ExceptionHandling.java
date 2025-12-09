@@ -24,6 +24,8 @@ public class ExceptionHandling {
             System.out.println(str);
         } catch (NullPointerException e) {
             System.out.println(e);
+        } finally {
+            System.out.println("Humesha chalega hamm......");
         }
         // int a = 5;
         // int b = 0;
