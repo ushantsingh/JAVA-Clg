@@ -15,10 +15,10 @@ public class Questoin_1 {
         int e=list.size();
         int mid = s + (e - s) / 2;
 
-        Iterator<Integer> it = list.iterator();
-        while (it.hasNext() && it.next() <= mid) {
-            Integer x = it.next();
+        Iterator<Integer> it = list.listIterator(mid);
+        while (it.hasNext() ) {
+            System.out.println(it.next()+" ");
         }
-        System.out.println(list);
+        System.out.println(it);
     }
 }
