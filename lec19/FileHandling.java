@@ -16,6 +16,7 @@ public class FileHandling {
         }
         createData();
         readData();
+        deleteFile();
     }
     
     static void createData() {
@@ -32,13 +33,26 @@ public class FileHandling {
     static void readData() {
         try {
             FileReader reader = new FileReader("book1.html");
+            // reader.close();//---> close() lagane se IOException aayega 
             int ch;
             while ((ch = reader.read()) != -1) {
-                System.out.print((char)ch);
+                System.out.print((char) ch);
             }
         } catch (Exception e) {
             System.out.println(e);
         }
-
+    }
+    
+    static void deleteFile() {
+        try {
+            File file = new File("book1.html");
+            if (file.delete()) {
+                System.out.println("\nDeleated");
+            } else {
+                System.out.println("Not deleted");
+            }
+        } catch (Exception e) {
+            System.out.println(e);
+        }
     }
 }
