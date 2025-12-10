@@ -5,7 +5,7 @@ public class FileHandling {
     public static void main(String[] args) {
         try {
             File file = new File("book1.html");
-            if (file.createNewFile()) {
+            if (file.delete()) {
                 System.out.println("File Bnn Gyaa..." + "\n" + file.getName());
             } else {
                 System.out.println("Already Bna hua hai!");
@@ -18,8 +18,9 @@ public class FileHandling {
     
     static void createData() {
         try {
-            FileWriter writer = new FileWriter("book1.html");
-            writer.write("hello new file created");
+            FileWriter writer = new FileWriter("book1.html",true);
+            writer.write("hello hii");
+            writer.write("\nI am Samarth ");
             writer.close();
         } catch (Exception e) {
             System.out.println(e);
