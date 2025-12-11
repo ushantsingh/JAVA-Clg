@@ -6,11 +6,16 @@
        public void run() {
            System.out.println(Thread.currentThread().getName());
            for (int i = 0; i < 5; i++) {
-               System.out.println(i+" t1");
+               System.out.println(i + " t1");
+               try {
+                   Thread.sleep(2000);
+                } catch (Exception e) {
+                    System.out.println(e);
+                }
             }
         }
     }
-    public class MultiThreadung {
+        public class MultiThreadung {
     public static void main(String[] args) {
         System.out.println(Thread.currentThread().getName());
         MyThread t1 = new MyThread();
@@ -19,6 +24,7 @@
 
         try {
             t1.join();//--> it runs the the Thread whic is first called & blocks the rest Threads
+            // main.join();--> it is directly called by JVM 
         } catch (Exception e) {
             System.out.println(e);
         }
