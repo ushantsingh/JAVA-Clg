@@ -1,6 +1,14 @@
 class Song extends Thread {
     public void run() {
-        String str = "Yup Yup Yup haa haa Hee hee ";
+        String str = "कमर up कमर up कमर up\n" + //
+                        "कमर down कमर down\n" + //
+                        "कमर up\n" + //
+                        "कमर down कमर down\n" + //
+                        "\n" + //
+                        "गोरे गोरे मुख प कला कला केसिया\n" + //
+                        "गोरे गोरे मुखप काला काला केसिया\n" + //
+                        "लागे दोनों अखिया brown\n" + //
+                        "ये...";
         for (char ch : str.toCharArray()) {
             System.out.print(ch);
             try {
