@@ -6,7 +6,7 @@ public class FileHandling {
     public static void main(String[] args) {
         try {
             File file = new File("book1.html");
-            if (file.delete()) {
+            if (file.createNewFile()) {
                 System.out.println("File Bnn Gyaa..." + "\n" + file.getName());
             } else {
                 System.out.println("Already Bna hua hai!");
@@ -45,11 +45,11 @@ public class FileHandling {
     
     static void deleteFile() {
         try {
-            File file = new File("book1.html");
+            File file = new File("book2.html");
             if (file.delete()) {
                 System.out.println("\nDeleated");
             } else {
-                System.out.println("Not deleted");
+                System.out.println("\nNot deleted");
             }
         } catch (Exception e) {
             System.out.println(e);
