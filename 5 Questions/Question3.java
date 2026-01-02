@@ -11,7 +11,7 @@ public class Question3 {
         int even = 0;
         int odd = 0;
         
-        System.out.println("ENter Array Elements : ");
+        System.out.println("Enter Array Elements : ");
         for (int i = 0; i < n; i++) {
             arr[i] = sc.nextInt();
             if (arr[i] % 2 == 0) {
