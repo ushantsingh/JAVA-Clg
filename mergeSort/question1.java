@@ -4,6 +4,7 @@ public class question1 {
     public static void main(String[] args) {
         int arr[] = { 5, 4, 3, 2, 1 };
         arr = mergeSort(arr);
+        System.out.println("Sorted Array is : ");
         System.out.println(Arrays.toString(arr));
     }
     
@@ -11,10 +12,13 @@ public class question1 {
         if (arr.length == 1) {
             return arr;
         }
-        int mid = arr.length / 2;
+        int s = 0;
+        int e = arr.length;
+        int mid = s + (e - s) / 2;
+        // int mid = arr.length / 2;
 
         int left[] = mergeSort(Arrays.copyOfRange(arr, 0, mid));
-        int rigth[] = mergeSort(Arrays.copyOfRange(arr, mid, arr.length));
+        int rigth[] = mergeSort(Arrays.copyOfRange(arr, mid, e));
 
         return merge(left, rigth);
     }
@@ -42,7 +46,7 @@ public class question1 {
             k++;
         }
 
-        while (j < left.length) {
+        while (j < right.length) {
             mix[k] = left[i];
             j++;
             k++;
