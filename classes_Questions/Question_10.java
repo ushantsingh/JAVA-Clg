@@ -1,4 +1,4 @@
-package classes_Questions;
+// package classes_Questions;
 /*Create a class Laptop with brand, RAM, and price. Add a constructor to initialize values and a
 method to display them. */
 

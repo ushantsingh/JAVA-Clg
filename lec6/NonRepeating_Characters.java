@@ -9,11 +9,11 @@ public class NonRepeating_Characters {
             freq[ch]++;
         }
         // System.out.println("Frequency of Characters are : ");
-        for (int i = 0; i < 256; i++) {
-            if (freq[i] > 0) {
+        // for (int i = 0; i < 256; i++) {
+        //     if (freq[i] > 0) {
                 // System.out.println((char) i + "-->" + freq[i]);
-            }
-        }
+            // }
+        // }
 
         for (int i = 0; i < str.length(); i++) {
             if (freq[str.charAt(i)] == 1) {
