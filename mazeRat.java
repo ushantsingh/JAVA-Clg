@@ -28,7 +28,7 @@ public class mazeRat {
         if (isSafe(maze, x, y - 1, isvisited)) {
             solve(maze, x, y - 1, isvisited, path + "R");
         }
-        isvisited[x][y] = false;
+        isvisited[x][y] = false; 
     }
     public static void main(String[] args) {
         int maze[][] = {
