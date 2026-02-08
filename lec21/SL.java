@@ -55,15 +55,38 @@ class MyLinkedList{
         }
         temp.next = null;
     }
+
+    void addBetween(int x, int y) {
+    if (first == null) return;
+
+    Node temp = first;
+    while (temp != null && temp.data != x) {
+        temp = temp.next;
+    }
+
+    if (temp == null) {
+        return; 
+    }
+
+    Node newNode = new Node(y);
+    temp.next = newNode;
+    newNode.next = temp.next;
+}
+
 }
 public class SL {
     public static void main(String[] args) {
         MyLinkedList list = new MyLinkedList();
         list.inserBegning(10);
         list.inserBegning(20);
-        list.insertLast(30);
+        list.inserBegning(30);
+        list.inserBegning(40);
+        list.inserBegning(50);
+        list.inserBegning(60);
+        list.addBetween(40, 90);
+        // list.insertLast(30);
         // list.deleteStart();
-        list.deleteLast();
+        // list.deleteLast();
         list.display();
     }
 }
